@@ -1452,6 +1452,32 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "max(0, min(Player.X(), 1280))"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "max(0, min(Player.Y(), 720))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
