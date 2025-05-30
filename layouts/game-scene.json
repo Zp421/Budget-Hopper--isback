@@ -659,6 +659,7 @@
         },
         {
           "name": "TopDownMovement",
+          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 700,
           "maxSpeed": 300,
@@ -669,7 +670,6 @@
           "customIsometryAngle": 30,
           "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
-          "rotateObject": true,
           "viewpoint": "TopDown"
         },
         {
@@ -1544,6 +1544,36 @@
             "",
             "2"
           ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "Bill",
+            "Tween",
+            "\"MoveDown\"",
+            "Bill.X()",
+            "Bill.Y() + 200",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "Tax",
+            "Tween",
+            "\"MoveUp\"",
+            "Tax.X()",
+            "Tax.Y() - 200",
+            "\"linear\"",
+            "2",
+            ""
+          ]
         }
       ]
     },
@@ -1721,20 +1751,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -2008,6 +2024,157 @@
             "270",
             "50",
             "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "Bill",
+            "Tween",
+            "\"MoveDown\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "Tax",
+            "Tween",
+            "\"MoveUp\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "Bill",
+            "Tween",
+            "\"MoveUp\"",
+            "Bill.X()",
+            "Bill.Y() - 200",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "Tax",
+            "Tween",
+            "\"MoveDown\"",
+            "Tax.X()",
+            "Tax.Y() + 200",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "Bill",
+            "Tween",
+            "\"MoveUp\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "Tax",
+            "Tween",
+            "\"MoveDown\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::ResumeTween"
+          },
+          "parameters": [
+            "Bill",
+            "Tween",
+            "\"MoveDown\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::ResumeTween"
+          },
+          "parameters": [
+            "Tax",
+            "Tween",
+            "\"MoveUp\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "Bill",
+            "Tween",
+            "\"MoveDown\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "Tax",
+            "Tween",
+            "\"MoveUp\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::ResumeTween"
+          },
+          "parameters": [
+            "Bill",
+            "Tween",
+            "\"MoveUp\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::ResumeTween"
+          },
+          "parameters": [
+            "Tax",
+            "Tween",
+            "\"MoveDown\""
           ]
         }
       ]
