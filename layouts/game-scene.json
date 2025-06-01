@@ -659,8 +659,8 @@
         },
         {
           "name": "TopDownMovement",
-          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "rotateObject": false,
           "acceleration": 700,
           "maxSpeed": 300,
           "angularMaxSpeed": 300,
