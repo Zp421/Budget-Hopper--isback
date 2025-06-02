@@ -1461,10 +1461,11 @@
       "actions": [
         {
           "type": {
-            "value": "Arreter"
+            "value": "TopDownMovementBehavior::SimulateRightKey"
           },
           "parameters": [
-            "Player"
+            "Player",
+            "TopDownMovement"
           ]
         }
       ]
