@@ -1434,14 +1434,6 @@
             "Right_border",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "Arreter"
-          },
-          "parameters": [
-            "Player"
-          ]
         }
       ]
     },
@@ -1631,6 +1623,14 @@
           "parameters": [
             "ControlText",
             "\"ControlTextTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "Player"
           ]
         }
       ]
