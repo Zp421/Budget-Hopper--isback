@@ -1434,6 +1434,14 @@
             "Right_border",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "Player"
+          ]
         }
       ]
     },
@@ -1453,11 +1461,10 @@
       "actions": [
         {
           "type": {
-            "value": "TopDownMovementBehavior::SimulateLeftKey"
+            "value": "Arreter"
           },
           "parameters": [
-            "Player",
-            "TopDownMovement"
+            "Player"
           ]
         }
       ]
