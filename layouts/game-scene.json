@@ -479,7 +479,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 221,
+      "height": 256,
       "keepRatio": true,
       "layer": "",
       "name": "TreeofFinancialStability",
@@ -1416,7 +1416,7 @@
       "actions": [
         {
           "type": {
-            "value": "TopDownMovementBehavior::SimulateLeftKey"
+            "value": "TopDownMovementBehavior::SimulateRightKey"
           },
           "parameters": [
             "Player",
