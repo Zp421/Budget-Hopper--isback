@@ -1453,7 +1453,7 @@
       "actions": [
         {
           "type": {
-            "value": "TopDownMovementBehavior::SimulateRightKey"
+            "value": "TopDownMovementBehavior::SimulateLeftKey"
           },
           "parameters": [
             "Player",
@@ -1623,14 +1623,6 @@
           "parameters": [
             "ControlText",
             "\"ControlTextTimer\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Arreter"
-          },
-          "parameters": [
-            "Player"
           ]
         }
       ]
