@@ -1385,7 +1385,7 @@
           },
           "parameters": [
             "",
-            "\"s\""
+            "\"a\""
           ]
         }
       ],
@@ -1409,7 +1409,7 @@
           },
           "parameters": [
             "",
-            "\"a\""
+            "\"d\""
           ]
         }
       ],
@@ -2175,6 +2175,31 @@
             "Tax",
             "Tween",
             "\"MoveDown\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"s\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::SimulateDownKey"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement"
           ]
         }
       ]
