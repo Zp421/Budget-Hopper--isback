@@ -607,6 +607,17 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/21bcfe4bb1045b82ecde51b2c493fc80da9496fb2f12e2e874a799d97505b795_Goldman-Regular.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/NotoSansJP-Medium.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "4932dad248d6e1290da5aa6850f7c59ccd7ef5c3132b4ed3acefb44557d5a3b9_NotoSansJP-Medium.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/4932dad248d6e1290da5aa6850f7c59ccd7ef5c3132b4ed3acefb44557d5a3b9_NotoSansJP-Medium.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []

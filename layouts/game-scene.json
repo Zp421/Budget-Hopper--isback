@@ -593,6 +593,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ControlText",
+      "persistentUuid": "6be25bd1-9d5e-49e7-94c9-d33e453bed94",
+      "width": 0,
+      "x": -64,
+      "y": 256,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1258,6 +1274,48 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ControlText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Press keys W, S, and D \nto reach Financial Stability!",
+      "font": "4932dad248d6e1290da5aa6850f7c59ccd7ef5c3132b4ed3acefb44557d5a3b9_NotoSansJP-Medium.ttf",
+      "textAlignment": "center",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Press keys W, S, and D \nto reach Financial Stability!",
+        "font": "4932dad248d6e1290da5aa6850f7c59ccd7ef5c3132b4ed3acefb44557d5a3b9_NotoSansJP-Medium.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1283,6 +1341,9 @@
       },
       {
         "objectName": "TreeofFinancialStability"
+      },
+      {
+        "objectName": "ControlText"
       },
       {
         "objectName": "Bill"
@@ -1573,6 +1634,24 @@
             "\"linear\"",
             "2",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "ControlText",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "ControlText",
+            "\"ControlTextTimer\""
           ]
         }
       ]
@@ -2200,6 +2279,41 @@
           "parameters": [
             "Player",
             "TopDownMovement"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "ControlText",
+            "\"ControlTextTimer\"",
+            ">=",
+            "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "ControlText"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "ControlText",
+            "\"ControlTextTimer\""
           ]
         }
       ]
