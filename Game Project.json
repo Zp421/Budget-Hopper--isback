@@ -190,7 +190,7 @@
       {
         "file": "assets/Flat Heart Filled.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Flat Heart Filled.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Flat Heart Filled.png",
         "smoothed": true,
         "userAdded": false,
