@@ -376,7 +376,7 @@
       {
         "file": "assets/StartingObstacle.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/StartingObstacle.png\",\"extension\":\".png\"}",
         "name": "assets/StartingObstacle.png",
         "smoothed": true,
         "userAdded": false

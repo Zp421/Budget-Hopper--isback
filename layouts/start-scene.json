@@ -33,8 +33,8 @@
       "name": "RedButton",
       "persistentUuid": "cad73678-6515-491f-9a82-9d42faea9a3c",
       "width": 0,
-      "x": 480,
-      "y": 448,
+      "x": 512,
+      "y": 470,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -42,13 +42,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
       "keepRatio": true,
       "layer": "",
       "name": "Start_Text",
       "persistentUuid": "582c93a0-dc56-4314-9cf3-0f91c1d8de12",
-      "width": 0,
+      "width": 507,
       "x": 389,
       "y": 96,
       "zOrder": 2,
@@ -69,6 +70,38 @@
       "x": 64,
       "y": 249,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "60dcee45-b990-4fb4-a100-0bcf8f2ee697",
+      "width": 0,
+      "x": 928,
+      "y": 96,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "e5d01499-b497-4507-bbf0-e71ffb5d4257",
+      "width": 0,
+      "x": 288,
+      "y": 96,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -173,7 +206,7 @@
       "behaviors": [],
       "string": "Budget Hopper!",
       "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-      "textAlignment": "left",
+      "textAlignment": "center",
       "characterSize": 50,
       "color": {
         "b": 0,
@@ -196,7 +229,7 @@
         "underlined": false,
         "text": "Budget Hopper!",
         "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-        "textAlignment": "left",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
         "characterSize": 50,
         "color": "0;0;0"
@@ -243,6 +276,67 @@
         "characterSize": 35,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "assets/StartingObstacle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/StartingObstacle.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -256,6 +350,9 @@
       },
       {
         "objectName": "NewText"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },
@@ -365,6 +462,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
